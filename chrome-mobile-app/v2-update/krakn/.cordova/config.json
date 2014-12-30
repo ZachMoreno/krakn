@@ -1,0 +1,21 @@
+{
+    "plugin_search_path": [
+        "/Users/rinzler/.nvm/v0.10.30/lib/node_modules/cca/cordova",
+        "/Users/rinzler/.nvm/v0.10.30/lib/node_modules/cca/cordova/cordova-plugins",
+        "/Users/rinzler/.nvm/v0.10.30/lib/node_modules/cca/chrome-cordova/plugins"
+    ],
+    "lib": {
+        "android": {
+            "uri": "/Users/rinzler/.nvm/v0.10.30/lib/node_modules/cca/cordova/cordova-android",
+            "url": "/Users/rinzler/.nvm/v0.10.30/lib/node_modules/cca/cordova/cordova-android"
+        },
+        "ios": {
+            "uri": "/Users/rinzler/.nvm/v0.10.30/lib/node_modules/cca/cordova/cordova-ios",
+            "url": "/Users/rinzler/.nvm/v0.10.30/lib/node_modules/cca/cordova/cordova-ios"
+        },
+        "www": {
+            "uri": "/Users/rinzler/Desktop/prod-krakn/chrome-app",
+            "link": false
+        }
+    }
+}

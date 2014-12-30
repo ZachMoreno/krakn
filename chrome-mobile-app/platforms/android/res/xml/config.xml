@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.firebaseapp.krakn" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="webView" value="org.apache.cordova.engine.crosswalk.XWalkCordovaWebView" />
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="android-package" onload="true" value="org.apache.cordova.statusbar.StatusBar" />
+    </feature>
+    <feature name="ChromeStorage">
+        <param name="android-package" value="org.chromium.ChromeStorage" />
+    </feature>
+    <feature name="ChromeBootstrap">
+        <param name="android-package" value="org.chromium.ChromeBootstrap" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="ChromeExtensionURLs">
+        <param name="android-package" value="org.chromium.ChromeExtensionURLs" />
+        <param name="onload" value="true" />
+    </feature>
+    <access origin="chrome-extension://*" />
+    <preference name="DisallowOverscroll" value="true" />
+    <feature name="ChromeI18n">
+        <param name="android-package" value="org.chromium.ChromeI18n" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="ChromeNavigation">
+        <param name="android-package" value="org.chromium.ChromeNavigation" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>krakn</name>
+    <description>Real-time chat application built with AngularJS, the Ionic Framework and Firebase as an example application for the book AngularJS Deployment Essentials.</description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">Author name and email</author>
+    <content src="plugins/org.chromium.bootstrap/chromeapp.html" />
+</widget>

@@ -1,0 +1,35 @@
+<ion-view title="'Chat'" left-buttons="leftButtons">
+	<ion-content has-header="true"
+				 has-footer="true"
+				 padding="false"
+				 has-bouncing="true">
+		<ion-list option-buttons="itemButtons"
+				  can-swipe="false"
+				  option-buttons="itemButtons"
+				  ng-show="messages">
+			<div id="chat">
+				<ion-item ng-repeat="message in messages | orderByPriority"
+						  item="item"
+						  can-swipe="false"
+						  ng-class="appliedClass({{ message.user }})">
+					<h2 class="user">{{ message.user }}</h2>
+					<small class="time">{{ message.receivedTime | timeago }}</small>
+					<p class="message">{{ message.text }}</p>
+				</ion-item>
+			</div> <!-- end #chat -->
+		</ion-list>
+	</ion-content>
+
+	<div id="chat-input" class="bar bar-footer bar-stable">
+		<form>
+			<label class="item-input-wrapper">
+				<input type="text"
+					   class="{{ feeling }}"
+					   placeholder="{{ feedback }}"
+					   ng-model="data.newMessage" />
+			</label>
+
+			<button type="submit" id="chat-send" class="button button-small button-clear" ng-click="addMessage()"><span class="ion-android-send"></span></button>
+		</form>
+	</div> <!-- end .bar-footer -->
+</ion-view>

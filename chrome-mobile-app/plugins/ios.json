@@ -1,0 +1,155 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "framework": {
+                "parents": {
+                    "AssetsLibrary.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "MobileCoreServices.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "CoreGraphics.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "SystemConfiguration.framework": [
+                        {
+                            "xml": "true",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"File\"><param name=\"ios-package\" value=\"CDVFile\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"ios-package\" value=\"CDVConnection\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"ios-package\" onload=\"true\" value=\"CDVStatusBar\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarOverlaysWebView\" value=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarBackgroundColor\" value=\"#000000\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Keyboard\"><param name=\"ios-package\" onload=\"true\" value=\"CDVKeyboard\" /></feature>",
+                            "count": 1
+                        }
+                    ],
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"ChromeStorage\"><param name=\"ios-package\" value=\"ChromeStorage\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ChromeNavigation\"><param name=\"ios-package\" value=\"ChromeNavigation\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ChromeBootstrap\"><param name=\"ios-package\" value=\"ChromeBootstrap\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ChromeExtensionURLs\"><param name=\"ios-package\" value=\"ChromeExtensionURLs\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"chrome-extension://*\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"KeyboardDisplayRequiresUserAction\" value=\"false\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"DisallowOverscroll\" value=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ChromeI18n\"><param name=\"ios-package\" value=\"ChromeI18n\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "org.apache.cordova.engine.crosswalk": {
+            "PACKAGE_NAME": "com.your.company.HelloWorld"
+        },
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "com.your.company.HelloWorld"
+        },
+        "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "com.your.company.HelloWorld"
+        },
+        "org.apache.cordova.network-information": {
+            "PACKAGE_NAME": "com.your.company.HelloWorld"
+        },
+        "org.apache.cordova.statusbar": {
+            "PACKAGE_NAME": "com.your.company.HelloWorld"
+        },
+        "org.apache.cordova.labs.keyboard": {
+            "PACKAGE_NAME": "com.your.company.HelloWorld"
+        },
+        "org.chromium.common": {
+            "PACKAGE_NAME": "com.your.company.HelloWorld"
+        },
+        "org.chromium.runtime": {
+            "PACKAGE_NAME": "com.your.company.HelloWorld"
+        },
+        "org.chromium.navigation": {
+            "PACKAGE_NAME": "com.your.company.HelloWorld"
+        },
+        "org.chromium.bootstrap": {
+            "PACKAGE_NAME": "com.your.company.HelloWorld"
+        },
+        "org.chromium.i18n": {
+            "PACKAGE_NAME": "com.your.company.HelloWorld"
+        },
+        "org.chromium.polyfill.CustomEvent": {
+            "PACKAGE_NAME": "com.your.company.HelloWorld"
+        },
+        "org.chromium.polyfill.xhr_features": {
+            "PACKAGE_NAME": "com.your.company.HelloWorld"
+        },
+        "org.chromium.polyfill.blob_constructor": {
+            "PACKAGE_NAME": "com.your.company.HelloWorld"
+        }
+    },
+    "dependent_plugins": {
+        "org.chromium.storage": {
+            "PACKAGE_NAME": "com.your.company.HelloWorld"
+        }
+    }
+}

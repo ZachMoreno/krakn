@@ -1,0 +1,70 @@
+<ion-view title="'Account'" left-buttons="leftButtons">
+    <ion-content has-header="true" padding="true">
+        <div class="list">
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <div class="item item-divider">Profile</div>
+
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Name</span>
+                            <p>{{ user.name }}</p>
+                        </label>
+
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Email</span>
+                            <p>{{ user.email }}</p>
+                        </label>
+                    </div> <!-- end .col -->
+                </div> <!-- end .row -->
+
+
+                <div class="row">
+                    <div class="col col-50">
+                        <div class="item item-divider">Change Password</div>
+
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Old Password</span>
+                            <input type="password" ng-keypress="reset()" ng-model="oldpass"/>
+                        </label>
+
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">New Password</span>
+                            <input type="password" ng-keypress="reset()" ng-model="newpass"/>
+                        </label>
+
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Confirm Password</span>
+                            <input type="password" ng-keypress="reset()" ng-model="confirm"/>
+                        </label>
+
+                        <button class="button button-block button-calm" ng-click="updatePassword()">update password</button>
+
+                        <p class="error" ng-show="err">{{err}}</p>
+                        <p class="good" ng-show="msg">{{msg}}</p>
+                    </div> <!-- end .col-50 -->
+
+
+                    <div class="col col-50">
+                        <div class="item item-divider">Change Email</div>
+
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">New Email</span>
+                            <input type="text" ng-keypress="reset()" ng-model="newemail"/>
+                        </label>
+
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Password</span>
+                            <input type="password" ng-keypress="reset()" ng-model="pass"/>
+                        </label>
+
+                        <button class="button button-block button-calm" ng-click="updateEmail()">update email</button>
+
+                        <p class="error" ng-show="emailerr">{{emailerr}}</p>
+                        <p class="good" ng-show="emailmsg">{{emailmsg}}</p>
+                    </div> <!-- end .col-50 -->
+                </div> <!-- end .row -->
+            </form>
+        </div> <!-- end .list -->
+    </ion-content>
+</ion-view>

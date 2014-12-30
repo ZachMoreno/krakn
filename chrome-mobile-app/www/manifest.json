@@ -1,0 +1,23 @@
+{
+  "name" : "krakn",
+  "description" : "Real-time chat application built with AngularJS, the Ionic Framework and Firebase as an example application for the book AngularJS Deployment Essentials.",
+  "version" : "1.0",
+  "manifest_version" : 2,
+  "app" : {
+    "launch" : {
+      "local_path" : "index.html",
+      "container" : "panel",
+      "height" : 650,
+      "width" : 400
+    },
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "content_security_policy" : "script-src 'self' https://auth.firebase.com https://*.firebaseio.com; object-src 'self'",
+  "icons" : {
+    "16" : "icon/icon_16.png",
+    "48" : "icon/icon_48.png",
+    "128" : "icon/icon_128.png"
+  }
+}
