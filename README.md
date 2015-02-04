@@ -1,10 +1,10 @@
 # Krakn
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ZachMoreno/krakn?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
 > Real-time chat app built with AngularJS, Firebase & Ionic
 > 
 > This is an example app that was built to suppliment my book, [AngularJS Deployment Essentials](https://www.packtpub.com/web-development/angularjs-deployment-essentials)
+
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ZachMoreno/krakn?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ![AngularJS Deployment Essentials Book Cover](https://d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/3582OS_mockupcover_normal.jpg)
 
