@@ -16,8 +16,7 @@ Chapter 4, *Deploying to Firebase Hosting*
 ### cordova-mobile-app/
 Chapter 5, *Deploying as Mobile App*
 
-### chrome-app/
-### chrome-mobile-app/
+### chrome-app/ & chrome-mobile-app/
 Chapter 6, *Deploying as Chrome App*
 
 ### beyond-the-book/
