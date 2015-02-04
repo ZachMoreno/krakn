@@ -1,0 +1,38 @@
+<ion-side-menus>
+  <ion-pane ion-side-menu-content drag-content="true">
+    <ion-nav-bar type="bar-positive">
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-pane> 
+  
+  <ion-side-menu side="left">
+    <header class="bar bar-header bar-calm">
+      <div class="title">
+        <img src="icon/icon_19806.svg" onerror="this.onerror=null; this.src='/icon/icon_19806.png'" alt="The Krakn">
+        <span id="app-name">krakn</span>
+      </div>
+    </header>
+    <ion-content has-header="true">
+      <ul class="list">
+        <a href="#/krakn/login" class="item" ng-click="toggleMenu()" ng-show-auth="['logout','error']">login</a>
+        <a href="#/krakn/about" class="item" ng-click="toggleMenu()">about</a>
+        <!-- Must be authenticated to access -->
+        <a href="#/krakn/chat" class="item" ng-click="toggleMenu()" ng-show-auth="'login'">chat</a>
+        <a href="#/krakn/account" class="item" ng-click="toggleMenu()" ng-show-auth="'login'">account</a>
+        <a href="#/krakn/login" class="item" ng-click="logout()" ng-show-auth="'login'">log out</a>
+
+        <img src="icon/blue-krakn.svg" onerror="this.onerror=null; this.src='/icon/icon_19806.png'" alt="The Krakn">
+      
+        <!-- <iframe src="http://player.animatron.com/go?0ae687b8dfd3d8b88311e4cfca3ef00e-v1.1&w=277&h=400&t=0&r=1" width="277" height="400" frameborder="0"></iframe> -->
+
+        <div id="bubbles">
+          <div class="bubble x1"></div>
+          <div class="bubble x2"></div>
+          <div class="bubble x3"></div>
+          <div class="bubble x4"></div>
+          <div class="bubble x5"></div>
+        </div>
+      </ul>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

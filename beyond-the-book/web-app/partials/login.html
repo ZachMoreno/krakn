@@ -1,0 +1,50 @@
+<ion-view title="'Login'" left-buttons="leftButtons">
+    <ion-content id="login" has-header="true" padding="true">
+        <div class="list">
+            <form>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">email</span>
+                    <input type="text" placeholder="you@email.com" ng-model="data.email" />
+                </label>
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">password</span>
+                    <input type="password" placeholder="embody strength" ng-model="data.pass" />
+                </label>
+
+                <label class="item item-input item-stacked-label" ng-show="createMode">
+                    <span class="input-label">confirm pass</span>
+                    <input type="password" placeholder="embody strength" ng-model="data.confirm" />
+                </label>
+
+                <div class="row">
+                    <div class="col col-50">
+                        <button class="button button-block button-positive" ng-click="login()" ng-hide="createMode">Log In</button>
+                    </div> <!-- end .col-50 -->
+
+                    <div class="col col-50">
+                        <button class="button button-block button-calm" ng-click="createMode = true" ng-hide="createMode">Register</button>
+                    </div> <!-- end .col-50 -->
+                </div> <!-- end .row -->
+
+
+                <div class="row">
+                    <div class="col col-50">
+                        <button class="button button-block button-calm" ng-show="createMode" ng-click="createAccount()">Create Account</button>
+                    </div> <!-- end .col-50 -->
+
+                    <div class="col col-50">
+                        <button class="button button-block button-assertive" ng-show="createMode" ng-click="createMode = false">Cancel</button>
+                    </div> <!-- end .col-50 -->
+                </div> <!-- end .row -->
+
+
+                <div class="row">
+                    <div class="col">
+                        <p ng-show="err" class="assertive text-center">{{err}}</p>
+                    </div> <!-- end .col -->
+                </div> <!-- end .row -->
+            </form>
+        </div> <!-- end .list -->
+    </ion-content>
+</ion-view>
