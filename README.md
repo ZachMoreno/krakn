@@ -8,16 +8,31 @@
 ## Structure
 
 ### web-app/
-Chapter 1, *Our App and Tool Stack*
-Chapter 2, *Deploying to Apache*
-Chapter 3, *Deploying to Heroku*
-Chapter 4, *Deploying to Firebase Hosting*
+<dl>
+	<dt>Chapter 1</dt>
+	<dd>Our App and Tool Stack</dd>
+
+	<dt>Chapter 2</dt>
+	<dd>Deploying to Apache</dd>
+
+	<dt>Chapter 3</dt>
+	<dd>Deploying to Heroku</dd>
+
+	<dt>Chapter 4</dt>
+	<dd>Deploying to Firebase Hosting</dd>
+</dl>
 
 ### cordova-mobile-app/
-Chapter 5, *Deploying as Mobile App*
+<dl>
+	<dt>Chapter 5</dt>
+	<dd>Deploying as Mobile App</dd>
+</dl>
 
 ### chrome-app/ & chrome-mobile-app/
-Chapter 6, *Deploying as Chrome App*
+<dl>
+	<dt>Chapter 6</dt>
+	<dd>Deploying as Chrome App</dd>
+</dl>
 
 ### beyond-the-book/
 I will continue to improve this application beyond the release of the aformentioned book. This approach will ensure that the examples within the text are in sync with this repo, while alowing me to continue development within this folder.
